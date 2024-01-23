@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="458.0" prefWidth="322.0" style="-fx-background-color: PaleGreen;">
+               <children>
+                  <Label layoutX="17.0" layoutY="286.0" text="Minimarket Management System" textFill="#05016f">
+                     <font>
+                        <Font name="Berlin Sans FB" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="61.0" layoutY="315.0" text="Hidup ini singkat. Beli semuanya" textFill="#b24109">
+                     <font>
+                        <Font name="Symbol" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="431.0" text="Proyek_PBO_072_062_064_052" textFill="#a4a4a4">
+                     <font>
+                        <Font name="Segoe UI" size="10.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="160.0" fitWidth="204.0" layoutX="53.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/Biru%20Toska%20Profesional%20Inisial%20Nama%20Logo%20(2).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="admin_form" layoutX="317.0" prefHeight="458.0" prefWidth="329.0">
+               <children>
+                  <ImageView fitHeight="93.0" fitWidth="112.0" layoutX="118.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/585e4beacb11b227491c3399.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="77.0" layoutY="141.0" text="Admin Sign In" textFill="#007026">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="admin_username" layoutX="51.0" layoutY="214.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@login.css" />
+                  <Button fx:id="admin_loginBtn" layoutX="52.0" layoutY="318.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="220.0" styleClass="btn-login" stylesheets="@login.css" text="Login">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink fx:id="admin_hyperLink" layoutX="105.0" layoutY="404.0" onAction="#switchForm" text="Login pembeli?">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <Button layoutX="267.0" layoutY="1.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="53.0" styleClass="close" stylesheets="@login.css" text="X" AnchorPane.rightAnchor="2.0">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="-13.0" prefHeight="458.0" prefWidth="37.0" style="-fx-background-color: SeaGreen;" />
+                  <PasswordField fx:id="admin_password" layoutX="52.0" layoutY="269.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@login.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="cust_form" layoutX="327.0" layoutY="10.0" prefHeight="458.0" prefWidth="329.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="317.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="93.0" fitWidth="112.0" layoutX="118.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/585e4beacb11b227491c3399.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="77.0" layoutY="141.0" text="Customer Sign In" textFill="#007026">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cust_username" layoutX="51.0" layoutY="214.0" prefHeight="30.0" prefWidth="220.0" promptText="Username" styleClass="textfield" stylesheets="@login.css" />
+                  <Button fx:id="cust_loginBtn" layoutX="52.0" layoutY="318.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="220.0" styleClass="btn-login" stylesheets="@login.css" text="Login">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Button>
+                  <Hyperlink fx:id="cust_hyperLink" layoutX="120.0" layoutY="404.0" onAction="#switchForm" text="Login admin?">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Hyperlink>
+                  <Button layoutX="267.0" layoutY="1.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="53.0" styleClass="close" stylesheets="@login.css" text="X" AnchorPane.rightAnchor="2.0">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="-13.0" prefHeight="458.0" prefWidth="37.0" style="-fx-background-color: SeaGreen;" />
+                  <PasswordField fx:id="cust_password" layoutX="52.0" layoutY="269.0" prefHeight="30.0" prefWidth="220.0" promptText="Password" styleClass="textfield" stylesheets="@login.css" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
